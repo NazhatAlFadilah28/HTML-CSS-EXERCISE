@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 7 [7d,7e,7f,</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        .container {
+            width: 300px;
+            text-align: left;
+        }
+
+        /* 7d: Textbox dengan sudut membulat */
+        .rounded {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+        }
+
+        /* 7e: Textbox dengan shadow dan tanpa border */
+        .shadow {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 7f: LinkedIn Signup */
+        .linkedin-box {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .linkedin-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0073b1;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .linkedin-button:hover {
+            background-color: #005582;
+        }
+
+        /* 7g: Twitter Text Box */
+        .twitter-box {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            padding: 10px;
+            width: 100%;
+            background-color: white;
+        }
+
+        .twitter-box img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .twitter-input {
+            border: none;
+            outline: none;
+            flex-grow: 1;
+        }
+
+        .twitter-button {
+            background-color: #1DA1F2;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .twitter-button:hover {
+            background-color: #0d8bf0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h3>7d: Textbox dengan sudut membulat</h3>
+        <input type="text" class="rounded" placeholder="Search">
+
+        <h3>7e: Textbox dengan shadow dan tanpa border</h3>
+        <input type="text" class="shadow" placeholder="Search Google or type a URL">
+
+        <h3>7f: LinkedIn Signup</h3>
+        <input type="email" class="linkedin-box" placeholder="Email">
+        <p>By clicking Agree & Join, you agree to the Privacy Policy.</p>
+        <button class="linkedin-button">Agree & Join</button>
+
+        <h3>7g: Twitter Text Box</h3>
+        <div class="twitter-box">
+            <img src="kucing.png" alt="Profile Picture">
+            <input type="text" class="twitter-input" placeholder="What's happening?">
+            <button class="twitter-button">Tweet</button>
+        </div>
+    </div>
+
+</body>
+</html>
+
