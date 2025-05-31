@@ -1,0 +1,162 @@
+<h2>Lesson 17 A</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jihan Fauziah</title>
+  <link rel="stylesheet" href="17a.css">
+</head>
+<body>
+  <div class="container">
+    <a href="https://youtu.be/H6XCgsAnM1U?si=zQjftdcuXdvE8zkY" class="thumbnail">
+      <img src="Game foto.png" alt="">
+    </a>
+    <div class="label">14.20</div>
+    <div class="text">
+      <div class="tool">
+        <img src="Donnay.jpg" alt="">
+        <div class="tool-text">
+          <img src="Donnay.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%; box-shadow: rgba(0, 0, 0, 0.6);">
+          <p><b>Marques Brownlee</b><br>20M subscribers</p>
+        </div>
+      </div>
+      <p style="font-size: 14px;">Talking Tech and AI with Google CEO Sundar Pichai!
+        <br><br>
+        <font color="grey">Marques Brownlee<br>1.2B views * 6 months ago</font>
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <a href="https://youtu.be/H6XCgsAnM1U?si=zQjftdcuXdvE8zkY" class="thumbnail">
+      <img src="Game foto.png" alt="">
+    </a>
+    <div class="label">08.21</div>
+    <div class="text">
+      <div class="tool">
+        <img src="Donnay.jpg" alt="">
+        <div class="tool-text">
+          <img src="Donnay.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%; box-shadow: rgba(0, 0, 0, 0.6);">
+          <p><b>Markiplier</b><br>20M subscribers</p>
+        </div>
+      </div>
+      <p style="font-size: 14px;">Try Not To Laugh Challenge #9
+        <br><br>
+        <font color="grey">Markiplier<br>1.2B views * 6 months ago</font>
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <a href="https://youtu.be/H6XCgsAnM1U?si=zQjftdcuXdvE8zkY" class="thumbnail">
+      <img src="Game foto.png" alt="">
+    </a>
+    <div class="label">09.12</div>
+    <div class="text">
+      <div class="tool">
+        <img src="Donnay.jpg" alt="">
+        <div class="tool-text">
+          <img src="Donnay.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%; box-shadow: rgba(0, 0, 0, 0.6);">
+          <p><b>SSSniverWolf</b><br>70M subscribers</p>
+        </div>
+      </div>
+      <p style="font-size: 14px;">Main game The SIMS
+        <br><br>
+        <font color="grey">SSSniverWolf<br>2.3B views * 9 months ago</font>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
+<style>
+:root {
+  --overlay-background: rgba(0, 0, 0, 0.6);
+}
+body {
+  font-family: Tahoma;
+  display: flex; 
+  gap: 10px; 
+}
+.container {
+  width: 280px;
+  border-radius: 4px;
+  height: 260px;
+  border: none;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+.container .thumbnail img{
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  object-position: 0 0;
+}
+.container .label {
+  position: absolute;
+  bottom: 110px;  
+  right: 10px;    
+  color: white;
+  background-color: var(--overlay-background);
+  padding: 2px 4px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.text {
+  display: flex;
+  flex-direction: row;
+  padding: 3px;
+  position: relative;
+  bottom: 10px;
+}
+.text .tool {
+  position: relative;
+  display: inline-block;
+}
+.text .tool .tool-text {
+  width: 200px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  visibility: hidden;
+  display: flex;
+}
+.text .tool:hover .tool-text {
+  visibility: visible;
+}
+.text img{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 13px 7px 0 0;
+}
+
+@media (max-width: 1000px) {
+  body {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .container {
+    width: 280px;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 230px;
+  }
+}
+</style>
